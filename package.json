@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "http-proxy-middleware": "^3.0.5",
     "node-fetch": "^3.3.2"
   },
   "scripts": {
-  "start": "node index.js"
-    }
+    "start": "node index.js"
+  }
 }
