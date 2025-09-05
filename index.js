@@ -1,8 +1,8 @@
 import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
-const cors = require('cors');
 
 dotenv.config();
 
