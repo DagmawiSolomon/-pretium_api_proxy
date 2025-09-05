@@ -1,0 +1,12 @@
+{
+  "name": "pretium_api_proxy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "node-fetch": "^3.3.2"
+  }
+}
