@@ -2,12 +2,17 @@ import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import dotenv from 'dotenv';
 
+const cors = require('cors');
+
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 const PRETIUM_API_URL = process.env.PRETIUM_API_URL;
 const PRETIUM_API_KEY = process.env.PRETIUM_API_KEY;
+
+
+app.use(cors());
 
 const pretiumProxy = createProxyMiddleware({
   target: PRETIUM_API_URL,
